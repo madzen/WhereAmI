@@ -1,0 +1,5 @@
+## Interface: 11000
+## Title: WhereAmI
+## Notes: Lets a player know where you are when they send you a tell with a certain trigger.
+## SavedVariablesPerCharacter: WhereAmI_Trigger, WhereAmI_Enabled
+WhereAmI.xml

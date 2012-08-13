@@ -1,0 +1,21 @@
+<!--
+
+	WhereAmI: Lets a player know where you are when they send you a tell with a certain trigger.
+		Copyright (C) 2006-2012 Madzen
+
+-->
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+	<Script file="WhereAmI.lua"/>
+	<Frame name="WhereAmIFrame" toplevel="true" frameStrata="LOW" enableMouse="true" parent="UIParent">
+		<Scripts>
+			<OnLoad>
+				WhereAmI_OnLoad();
+			</OnLoad>
+			<OnEvent>
+				WhereAmI_OnEvent(event);
+			</OnEvent>
+		</Scripts>
+	</Frame>
+	<GameTooltip name="WhereAmITooltip" inherits="GameTooltipTemplate" parent="UIParent" hidden="true"/>
+</Ui>
